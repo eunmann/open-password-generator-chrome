@@ -8,9 +8,15 @@ chrome.runtime.onInstalled.addListener(() => {
   });
 });
 
+function generateSecureRandom(max) {
+    const array = new Uint32Array(1);
+    crypto.getRandomValues(array);
+    return array[0] % max;
+}
+
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
+        const j = generateSecureRandom(i + 1);
         [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
@@ -25,7 +31,7 @@ function generateStrongPassword() {
     let password = [];
 
     function getRandomChar(str) {
-        return str[Math.floor(Math.random() * str.length)];
+        return str[generateSecureRandom(str.length)];
     }
 
     const minCharInstances = 2;
