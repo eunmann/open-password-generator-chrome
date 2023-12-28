@@ -1,7 +1,7 @@
 # Open Password Generator - Chrome Extension
 
 ## Overview
-This extension for the [Brave](https://brave.com/) browser provides a simple yet powerful feature: the ability to generate strong, secure passwords right from the context menu. It's especially designed for Brave users, as the browser lacks this built-in functionality. The extension generates a 16-character password containing a mix of uppercase and lowercase letters, numbers, and special characters.
+The Open Password Generator is an open-source extension designed specifically for the [Brave](https://brave.com/) browser. It addresses the absence of a built-in password generation feature in Brave by enabling users to easily create strong, secure passwords. This open-source nature ensures full transparency in the extension's functionality and security. The generated passwords are 16 characters long, including a balanced mix of uppercase and lowercase letters, numbers, and special characters.
 
 ## Features
 - **Easy Access**: Generate a password by right-clicking on any text input field.
